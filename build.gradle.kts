@@ -133,7 +133,7 @@ dependencies {
     //General Utility
     implementation(libs.trove4j)
     implementation(libs.bundles.jackson)
-
+    implementation("ch.qos.logback:logback-classic:1.5.6")
     //Sets the dependencies for the examples
     configurations["examplesImplementation"].withDependencies {
         addAll(configurations["api"].allDependencies)
